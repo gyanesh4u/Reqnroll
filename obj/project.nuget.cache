@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "dgSpecHash": "/NUC1hoUVok=",
+  "success": true,
+  "projectFilePath": "/Users/gyaneshkamal/Documents/Reqnroll/Reqnroll.csproj",
+  "expectedPackageFiles": [
+    "/Users/gyaneshkamal/.nuget/packages/microsoft.codecoverage/17.14.0/microsoft.codecoverage.17.14.0.nupkg.sha512",
+    "/Users/gyaneshkamal/.nuget/packages/microsoft.net.test.sdk/17.14.0/microsoft.net.test.sdk.17.14.0.nupkg.sha512",
+    "/Users/gyaneshkamal/.nuget/packages/microsoft.testplatform.objectmodel/17.14.0/microsoft.testplatform.objectmodel.17.14.0.nupkg.sha512",
+    "/Users/gyaneshkamal/.nuget/packages/microsoft.testplatform.testhost/17.14.0/microsoft.testplatform.testhost.17.14.0.nupkg.sha512",
+    "/Users/gyaneshkamal/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/gyaneshkamal/.nuget/packages/system.collections.immutable/8.0.0/system.collections.immutable.8.0.0.nupkg.sha512",
+    "/Users/gyaneshkamal/.nuget/packages/system.reflection.metadata/8.0.0/system.reflection.metadata.8.0.0.nupkg.sha512",
+    "/Users/gyaneshkamal/.nuget/packages/xunit/2.9.2/xunit.2.9.2.nupkg.sha512",
+    "/Users/gyaneshkamal/.nuget/packages/xunit.abstractions/2.0.3/xunit.abstractions.2.0.3.nupkg.sha512",
+    "/Users/gyaneshkamal/.nuget/packages/xunit.analyzers/1.16.0/xunit.analyzers.1.16.0.nupkg.sha512",
+    "/Users/gyaneshkamal/.nuget/packages/xunit.assert/2.9.2/xunit.assert.2.9.2.nupkg.sha512",
+    "/Users/gyaneshkamal/.nuget/packages/xunit.core/2.9.2/xunit.core.2.9.2.nupkg.sha512",
+    "/Users/gyaneshkamal/.nuget/packages/xunit.extensibility.core/2.9.2/xunit.extensibility.core.2.9.2.nupkg.sha512",
+    "/Users/gyaneshkamal/.nuget/packages/xunit.extensibility.execution/2.9.2/xunit.extensibility.execution.2.9.2.nupkg.sha512",
+    "/Users/gyaneshkamal/.nuget/packages/xunit.runner.visualstudio/2.8.0/xunit.runner.visualstudio.2.8.0.nupkg.sha512",
+    "/Users/gyaneshkamal/.nuget/packages/microsoft.netcore.app.ref/8.0.18/microsoft.netcore.app.ref.8.0.18.nupkg.sha512",
+    "/Users/gyaneshkamal/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.18/microsoft.aspnetcore.app.ref.8.0.18.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "ReqnrollTests depends on Microsoft.NET.Test.Sdk (>= 17.13.1) but Microsoft.NET.Test.Sdk 17.13.1 was not found. Microsoft.NET.Test.Sdk 17.14.0 was resolved instead.",
+      "projectPath": "/Users/gyaneshkamal/Documents/Reqnroll/Reqnroll.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/gyaneshkamal/Documents/Reqnroll/Reqnroll.csproj",
+      "libraryId": "Microsoft.NET.Test.Sdk",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "ReqnrollTests depends on xunit.runner.visualstudio (>= 2.5.11) but xunit.runner.visualstudio 2.5.11 was not found. xunit.runner.visualstudio 2.8.0 was resolved instead.",
+      "projectPath": "/Users/gyaneshkamal/Documents/Reqnroll/Reqnroll.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/gyaneshkamal/Documents/Reqnroll/Reqnroll.csproj",
+      "libraryId": "xunit.runner.visualstudio",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}
