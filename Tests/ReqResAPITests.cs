@@ -32,16 +32,21 @@ namespace ReqnrollTests.Tests
         [Fact]
         public async Task GetUsersFromPage2()
         {
-            ExtentReportService.StartTest(nameof(GetUsersFromPage2), "API Test");
+            ExtentReportService.StartTest(nameof(GetUsersFromPage2), "Fetch users from page 2 of ReqRes API");
             
             try
             {
-                var response = await _httpClient!.GetAsync("/api/users?page=2");
+                var endpoint = "/api/users?page=2";
+                ExtentReportService.LogRequestDetails("GET", "https://reqres.in" + endpoint);
+                
+                var response = await _httpClient!.GetAsync(endpoint);
+                var responseText = await response.Content.ReadAsStringAsync();
+                
+                ExtentReportService.LogResponse((int)response.StatusCode, "GET", endpoint, responseText);
                 
                 Assert.True(response.IsSuccessStatusCode, "Status code should be 200 (OK)");
-                ExtentReportService.LogInfo("✓ Response status: 200");
+                ExtentReportService.LogPass("Response status: 200 OK");
 
-                var responseText = await response.Content.ReadAsStringAsync();
                 var responseBody = JsonSerializer.Deserialize<JsonElement>(responseText);
 
                 Assert.True(responseBody.TryGetProperty("page", out var pageValue), "Response should contain 'page' field");
@@ -69,14 +74,19 @@ namespace ReqnrollTests.Tests
         [Fact]
         public async Task VerifyUserDataStructure()
         {
-            ExtentReportService.StartTest(nameof(VerifyUserDataStructure), "API Test");
+            ExtentReportService.StartTest(nameof(VerifyUserDataStructure), "Verify user data structure and required fields");
             
             try
             {
-                var response = await _httpClient!.GetAsync("/api/users?page=2");
+                var endpoint = "/api/users?page=2";
+                ExtentReportService.LogRequestDetails("GET", "https://reqres.in" + endpoint);
+                
+                var response = await _httpClient!.GetAsync(endpoint);
+                var responseText = await response.Content.ReadAsStringAsync();
+                
+                ExtentReportService.LogResponse((int)response.StatusCode, "GET", endpoint, responseText);
                 Assert.True(response.IsSuccessStatusCode);
 
-                var responseText = await response.Content.ReadAsStringAsync();
                 var responseBody = JsonSerializer.Deserialize<JsonElement>(responseText);
 
                 Assert.True(responseBody.TryGetProperty("data", out var dataArray), "Should have data array");
@@ -109,15 +119,19 @@ namespace ReqnrollTests.Tests
         [Fact]
         public async Task VerifyPagination()
         {
-            ExtentReportService.StartTest(nameof(VerifyPagination), "API Test");
+            ExtentReportService.StartTest(nameof(VerifyPagination), "Verify pagination structure in API response");
             
             try
             {
-                // Test page 2 with custom per_page parameter
-                var response = await _httpClient!.GetAsync("/api/users?page=2");
+                var endpoint = "/api/users?page=2";
+                ExtentReportService.LogRequestDetails("GET", "https://reqres.in" + endpoint);
+                
+                var response = await _httpClient!.GetAsync(endpoint);
+                var responseText = await response.Content.ReadAsStringAsync();
+                
+                ExtentReportService.LogResponse((int)response.StatusCode, "GET", endpoint, responseText);
                 Assert.True(response.IsSuccessStatusCode);
 
-                var responseText = await response.Content.ReadAsStringAsync();
                 var responseBody = JsonSerializer.Deserialize<JsonElement>(responseText);
 
                 // Verify pagination structure
@@ -148,14 +162,19 @@ namespace ReqnrollTests.Tests
         [Fact]
         public async Task FindUserById()
         {
-            ExtentReportService.StartTest(nameof(FindUserById), "API Test");
+            ExtentReportService.StartTest(nameof(FindUserById), "Find and verify user with ID 8 in API response");
             
             try
             {
-                var response = await _httpClient!.GetAsync("/api/users?page=2");
+                var endpoint = "/api/users?page=2";
+                ExtentReportService.LogRequestDetails("GET", "https://reqres.in" + endpoint);
+                
+                var response = await _httpClient!.GetAsync(endpoint);
+                var responseText = await response.Content.ReadAsStringAsync();
+                
+                ExtentReportService.LogResponse((int)response.StatusCode, "GET", endpoint, responseText);
                 Assert.True(response.IsSuccessStatusCode);
 
-                var responseText = await response.Content.ReadAsStringAsync();
                 var responseBody = JsonSerializer.Deserialize<JsonElement>(responseText);
 
                 Assert.True(responseBody.TryGetProperty("data", out var dataArray), "Should have data");
