@@ -1,0 +1,46 @@
+# Build results
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# Test Reports
+Reports/
+TestReport_*.html
+
+# IDEs
+.vs/
+.vscode/
+*.swp
+*.swo
+*~
+.idea/
+*.user
+*.userprefs
+
+# OS
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+*.nuspec
+.nuget/
+
+# dotnet
+.dotnet/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Runtime
+.runtimeconfig.json
+runtimeconfig.json
+
+# Misc
+*.log
+*.tmp
+node_modules/
+dist/
+coverage/
