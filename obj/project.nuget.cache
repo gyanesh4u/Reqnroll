@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/NUC1hoUVok=",
+  "dgSpecHash": "moQmJNXT50I=",
   "success": true,
   "projectFilePath": "/Users/gyaneshkamal/Documents/Reqnroll/Reqnroll.csproj",
   "expectedPackageFiles": [
@@ -18,9 +18,7 @@
     "/Users/gyaneshkamal/.nuget/packages/xunit.core/2.9.2/xunit.core.2.9.2.nupkg.sha512",
     "/Users/gyaneshkamal/.nuget/packages/xunit.extensibility.core/2.9.2/xunit.extensibility.core.2.9.2.nupkg.sha512",
     "/Users/gyaneshkamal/.nuget/packages/xunit.extensibility.execution/2.9.2/xunit.extensibility.execution.2.9.2.nupkg.sha512",
-    "/Users/gyaneshkamal/.nuget/packages/xunit.runner.visualstudio/2.8.0/xunit.runner.visualstudio.2.8.0.nupkg.sha512",
-    "/Users/gyaneshkamal/.nuget/packages/microsoft.netcore.app.ref/8.0.18/microsoft.netcore.app.ref.8.0.18.nupkg.sha512",
-    "/Users/gyaneshkamal/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.18/microsoft.aspnetcore.app.ref.8.0.18.nupkg.sha512"
+    "/Users/gyaneshkamal/.nuget/packages/xunit.runner.visualstudio/2.8.0/xunit.runner.visualstudio.2.8.0.nupkg.sha512"
   ],
   "logs": [
     {
@@ -32,7 +30,7 @@
       "filePath": "/Users/gyaneshkamal/Documents/Reqnroll/Reqnroll.csproj",
       "libraryId": "Microsoft.NET.Test.Sdk",
       "targetGraphs": [
-        "net8.0"
+        "net9.0"
       ]
     },
     {
@@ -44,7 +42,7 @@
       "filePath": "/Users/gyaneshkamal/Documents/Reqnroll/Reqnroll.csproj",
       "libraryId": "xunit.runner.visualstudio",
       "targetGraphs": [
-        "net8.0"
+        "net9.0"
       ]
     }
   ]
